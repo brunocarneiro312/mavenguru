@@ -5,11 +5,12 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class StringServiceImplTest
-{
+public class StringServiceImplTest {
+
+    private StringServiceImpl stringService = new StringServiceImpl();
+
     @Test
-    public void getName()
-    {
-        Assert.assertTrue(true);
+    public void getName() {
+        Assert.assertEquals("Bruno", stringService.getName());
     }
 }
